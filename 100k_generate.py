@@ -38,9 +38,19 @@ def modify_image(image):
 
 def modify_dyed_image(image):
     """ Modify the image by applying different pixel values using slicing. """
-    image[10000:40000, 20000:50000] = 255
-    image[10000:40000, 50000:70000]=0
-    image[60000:80000, 60000:90000]=0
+    # image[10000:40000, 20000:50000] = 255
+    # image[10000:40000, 50000:70000]=0
+    # image[60000:80000, 60000:90000]=0
+
+    # Execution time for 10 by 10 img: 0.552681 seconds
+    # Parasite area: 400000
+    # Dyed area inside parasite: 120000
+    # Dyed to parasite area ratio: 0.30
+    # The parasite has cancer: True
+    # The parasite has cancer: True
+
+    image[10000:50000, 20000:50000] = 255
+    image[10000:30000, 50000:70000]=0 
 
 # Stage 1: Generate images and save them in separate HDF5 files
 def generate_hdf5_images_parallel():
