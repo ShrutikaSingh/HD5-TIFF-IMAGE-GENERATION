@@ -38,10 +38,22 @@ def modify_image(image):
 
 def modify_dyed_image(image):
     """ Modify the image by applying different pixel values using slicing. """
-    image[1:4, 2:5] = 255
-    image[1:4, 5:7]=0
-    image[6:8, 6:9]=0
+    
+    # image[1:4, 2:5] = 255
+    # image[1:4, 5:7]=0 
+    # image[6:8, 6:9]=0 
 
+    # Parasite area: 50
+    # Dyed area inside parasite: 12
+    # The parasite has cancer: True
+
+    image[1:4, 2:5] = 255
+    image[1:3, 5:7]=0 
+
+    # Parasite area: 50
+    # Dyed area inside parasite: 4
+    # The parasite has cancer: False
+    
 # Stage 1: Generate images and save them in separate HDF5 files
 def generate_hdf5_images_parallel():
     # Create a NumPy array filled with 255 (white pixels)
