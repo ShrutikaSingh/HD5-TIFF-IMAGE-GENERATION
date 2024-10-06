@@ -397,9 +397,10 @@ In the worst-case scenario, the dye could cover 100% of the image, representing 
 ## Tested Image examples
 
 ***Parasitic Microscopic Image Used for this Case***
-<img width="486" alt="image" src="https://github.com/user-attachments/assets/53b041b5-e1dc-4173-b944-298d3c7beb40">
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/53b041b5-e1dc-4173-b944-298d3c7beb40">
 
 ***Dyed Images Caner Positive for above Parasitic Image***
+
 <img width="368" alt="image" src="https://github.com/user-attachments/assets/75d7489d-6cab-4ca5-9312-7ba24b692e72">
 
 <img width="368" alt="image" src="https://github.com/user-attachments/assets/c0ce79ac-cbda-4c8f-9246-be0afc1a36ae">
@@ -408,8 +409,7 @@ In the worst-case scenario, the dye could cover 100% of the image, representing 
 
 ***NON CANCEROUS***
 
-
-<img width="150" alt="image" src="https://github.com/user-attachments/assets/a624e5d3-2297-47bd-a1c7-17bf77514fe6">
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/a624e5d3-2297-47bd-a1c7-17bf77514fe6">
 
 --------------------------- ----------------------------------------------------
 # Running the code in your Local Machiene
