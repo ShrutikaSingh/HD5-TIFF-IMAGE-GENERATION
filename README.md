@@ -397,6 +397,7 @@ In the worst-case scenario, the dye could cover 100% of the image, representing 
 ## Tested Image examples
 
 ***Parasitic Microscopic Image Used for this Case***
+
 <img width="368" alt="image" src="https://github.com/user-attachments/assets/53b041b5-e1dc-4173-b944-298d3c7beb40">
 
 ***Dyed Images Caner Positive for above Parasitic Image***
