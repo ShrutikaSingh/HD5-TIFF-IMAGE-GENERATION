@@ -96,7 +96,8 @@
        - **For 10 * 10 Img**
          <img width="809" alt="image" src="https://github.com/user-attachments/assets/3c8606fd-4933-47ab-8897-f048b50b1618">
        - **For 100000 * 100000 Imh**
-       - <img width="815" alt="image" src="https://github.com/user-attachments/assets/d339805d-dadf-4dba-9cf6-496aa9767330">
+       - <img width="810" alt="image" src="https://github.com/user-attachments/assets/b0438e09-22f5-4933-bb85-148159bae9d2">
+
 
    - **Conclucion After perfoming the Experiment mentioned in detailed below** (Lossless)
      - **HD5 is Good For Generating Microscopic image as it to 18-11 = 9 seconds less time than TIFF Images Geneartion with all the optimisation processes mentioned above as well as for storing large size image**
