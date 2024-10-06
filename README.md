@@ -396,7 +396,7 @@ This project explores and compares two file formats, HDF5 and TIFF, for generati
 ## Prerequisites
 
  ## Main Folder Structure with Class Based Implementation 
-<img width="710" alt="image" src="https://github.com/user-attachments/assets/bd11e05a-0487-4593-a938-fe81c70fd123">
+<img width="685" alt="image" src="https://github.com/user-attachments/assets/3b838d17-7b13-4313-8935-2288508f4401">
 
 - Python 3.x
 - Libraries: h5py, PIL, NumPy, tqdm, concurrent.futures, numba
