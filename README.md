@@ -62,6 +62,31 @@
        - **JPEG** (Lossy)
        - **Deflate** (Lossless)
      - TIFF is effective for compressing images with large uniform regions, such as microscopic images.
+8. **Understanding and Applying different optimisation techniques mage Processing Optimizations**
+
+   1. **Numba for JIT Compilation**:
+      - Numba, the JIT (Just-In-Time) compilation, enhances performance via Just-In-Time compilation and parallel execution.
+   
+   2. **Pre-allocated Memory**:
+      - Allocates memory upfront, which is more efficient in the sense that reused memory does not need to be reallocated at the time when the program is running.
+   
+   3. **Concurrent File I/O**:
+      - Utilizes the `ThreadPoolExecutor` so that I/O tag on reading files is minimized, whereas I/O concurrency of file writing is improved.
+   
+   4. **Progress Monitoring**:
+      - Employs TQDM to give progress indications in real-time, thus increasing user experience.
+   
+   5. **Performance Timing**:
+      - Monitors execution times of specific regions to detect where the bottleneck is.
+   
+   6. **Parallel Loop Execution**:
+      - The operation of parallel processing on large arrays is done concurrently via `prange`, which dramatically improves CPU utilization.
+   
+   7. **In-place Image Modifications**:
+      - This is the direct modifiable of the array data for memory saving and for better performance.
+   
+   8. **File Compression**:
+      - Reducing the size of a file while maintaining or improving its speed can be achieved by zipping or compressing HDF5 files during storage.
 
 
 8. **Performing Experiment for finding which image would be better for generatioin and storing between TIFF & HD5:**
@@ -79,7 +104,6 @@
 
 9. **After Perfoming the above experiment for both TIFF & HD5**
     - **I decided to use 100000k by 100000k HD5 images for Checking the presence of cancer***
-
 
 # PROCEDURES, LOGIC, CODE  & OPTIMISATION TECHNIQUES EXPLAINATION
 
