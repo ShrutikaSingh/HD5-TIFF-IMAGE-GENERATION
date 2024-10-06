@@ -1,6 +1,6 @@
 # DragonFruit.ai Assesment
 
-### The Project have code follwing the Class Based Structure
+### The Project have code based Python Class Structure
 
 
 | Folder/File Name                              | Description                   |
