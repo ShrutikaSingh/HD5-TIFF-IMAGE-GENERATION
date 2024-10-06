@@ -3,7 +3,7 @@
 from parasite_small_image_generation import ParasiteSmallImageGenerator
 from dyed_small_image_generation import DyedSmallImageGenerator
 from parasite_large_generation import ParasiteLargeImageGenerator, ParasiteLargeDyedImageGenerator 
-from small_image_test import SmallImageTest
+from small_image_test import CancerTest
 from utility import convert_hdf5_to_png
 from config import HDF5_10_DIR, PNG_10_DIR, HDF5_100K_DIR , PNG_100K_DIR
 import numpy as np
@@ -29,7 +29,7 @@ def main():
 
     # Check for cancer in small images
     print("Checking for cancer in small images...")
-    SmallImageTest.has_cancer(original_image, dyed_image)
+    CancerTest.has_cancer(original_image, dyed_image)
 
     # Generate large parasite and dyed images
     print("Generating large parasite images...")
@@ -46,7 +46,7 @@ def main():
 
     # Check for cancer in large images
     print("Checking for cancer in large images...")
-    SmallImageTest.has_cancer(original_large_image, dyed_large_image)
+    CancerTest.has_cancer(original_large_image, dyed_large_image)
 
 if __name__ == "__main__":
     main()

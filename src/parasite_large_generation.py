@@ -18,10 +18,14 @@ def modify_image(image):
 @njit(parallel=True)
 def modify_dyed_image(image):
     """ Modify the dyed image with defined regions in parallel. """
-    for i in prange(10000, 50000):
-        image[i, 20000:50000] = 255
-    for i in prange(10000, 30000):
-        image[i, 50000:70000] = 0
+    for i in prange(0, 10000):
+        image[i, 20000:30000] = 255
+    for i in prange(0,50000):
+        image[i, 550000:100000] = 0
+
+# TRUE
+#  image[0:10000, 20000:30000] = 255  # Smaller dyed region (less than 10%)
+#    image[0:50000, 50000:100000] = 0   # Parasite remains black in large areas
 
 class ParasiteLargeImageGenerator:
     def __init__(self):

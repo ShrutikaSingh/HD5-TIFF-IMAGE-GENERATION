@@ -16,7 +16,7 @@ def calculate_dyed_area(original_image, dyed_image):
                     dyed_area += 1
     return parasite_area, dyed_area
 
-class SmallImageTest:
+class CancerTest:
     @staticmethod
     def has_cancer(original_image, dyed_image):
         start_time = timer_start()
