@@ -21,8 +21,8 @@ def timer_end(start_time, description="Operation"):
     return elapsed_time
 
 # Define the image dimensions
-width = 100000  
-height = 100000  
+width = 13000
+height = 13000 
 
 # Optimized function using Numba for fast image modification (parallel processing)
 @njit(parallel=True)
@@ -34,10 +34,10 @@ def modify_parasite_image(image):
 @njit(parallel=True)
 def modify_dyed_image(image):
     """ Modify the entire dyed image with specified regions. """
-    for i in prange(10000, 50000):
-        image[i, 20000:50000] = 255  # Set region to white
-    for i in prange(10000, 30000):
-        image[i, 50000:70000] = 0    # Set region to black
+    for i in prange(1000, 5000):
+        image[i, 2000:5000] = 255  # Set region to white
+    for i in prange(1000, 3000):
+        image[i, 5000:7000] = 0    # Set region to black
 
 # Function to save the image using Pillow
 def save_image(filename, data):
@@ -71,7 +71,7 @@ def generate_tiff_images():
         timer_end(step_start, "TIFF file saving in parallel")
 
         # End timer for the entire process
-        timer_end(total_start, "Total image processing")
+        timer_end(total_start, "Total image processing ")
 
 # Run the TIFF generation process
 generate_tiff_images()
