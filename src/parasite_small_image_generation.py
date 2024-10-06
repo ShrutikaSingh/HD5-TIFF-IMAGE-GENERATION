@@ -13,13 +13,11 @@ class ParasiteSmallImageGenerator:
     def generate(self):
         start_time = timer_start()
 
-        # Apply modifications from DYED_REGIONS in config.py
+        # Apply modifications from PARASITE_REGIONS in config.py
         for x_start, x_end, y_start, y_end, value in PARASITE_REGIONS:
-            self.image[x_start:x_end, y_start:y_end] = value
-
-        # Fill left half with white
-        self.image[:, :SMALL_WIDTH // 2] = WHITE
+            self.image[x_start:x_end, y_start:y_end] = value  # Fill region with specified value
 
         write_hdf5(f'{HDF5_10_DIR}/parasite.h5', 'parasite', self.image, compression="gzip")
 
         timer_end(start_time, PARASITE_SMALL_IMAGE_MESSAGE)
+
