@@ -1,5 +1,8 @@
 # Final Dragon FRUIT
 
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/205284e4-bf81-48be-8eb7-a5f3c6ca8d13">
+
 ## Thought Process
 
 1. **Initial Doubts:**
