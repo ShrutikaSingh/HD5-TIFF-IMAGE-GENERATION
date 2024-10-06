@@ -375,8 +375,6 @@ In the worst-case scenario, the dye could cover 100% of the image, representing 
 
 # CANCER RESULTS VERIFICATION
 
-### HD5
-
 ***CANCER Positive***
 
 <img width="368" alt="image" src="https://github.com/user-attachments/assets/d244d8ab-7fd9-4de1-81bb-46536546ff62">
@@ -384,6 +382,7 @@ In the worst-case scenario, the dye could cover 100% of the image, representing 
 <img width="368" alt="image" src="https://github.com/user-attachments/assets/efe3c752-cb54-4954-b47d-00f3961d2474">
 
 <img width="528" alt="image" src="https://github.com/user-attachments/assets/5572f035-0378-4b0c-8da7-ab8c9a2e2892">
+
 
 
 
@@ -395,7 +394,25 @@ In the worst-case scenario, the dye could cover 100% of the image, representing 
 <img width="368" alt="image" src="https://github.com/user-attachments/assets/efe3c752-cb54-4954-b47d-00f3961d2474">
 
 
---------------------------------------------------------------------------------
+## Tested Image examples
+
+***Parasitic Microscopic Image Used for this Case***
+<img width="486" alt="image" src="https://github.com/user-attachments/assets/53b041b5-e1dc-4173-b944-298d3c7beb40">
+
+***Dyed Images Caner Positive for above Parasitic Image***
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/75d7489d-6cab-4ca5-9312-7ba24b692e72">
+
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/c0ce79ac-cbda-4c8f-9246-be0afc1a36ae">
+
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/e3354e1d-a98a-43e5-a0b2-d7d71709e70a">
+
+***NON CANCEROUS***
+
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/a624e5d3-2297-47bd-a1c7-17bf77514fe6">
+
+--------------------------- ----------------------------------------------------
+# Running the code in your Local Machiene
 
 ## Prerequisites
 
