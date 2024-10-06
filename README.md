@@ -1,7 +1,56 @@
-# Final Dragon FRUIT
+# DragonFruit.ai Assesment
+
+### The Project have code follwing the Class Based Structure
 
 
-<img width="150" alt="image" src="https://github.com/user-attachments/assets/205284e4-bf81-48be-8eb7-a5f3c6ca8d13">
+| Folder/File Name                              | Description                   |
+|-----------------------------------------------|-------------------------------|
+| `100KImg`                                    | Folder for 100K images        |
+| `10Img`                                      | Folder for 10 images          |
+| `HD5`                                        | Folder for HD5 files          |
+| `Tiff`                                       | Folder for TIFF files         |
+| `__pycache__`                                | Folder for cached Python files |
+| `dyed_large_image_generation.py`             | Script for generating large dyed images |
+| `dyed_small_image_generation.py`             | Script for generating small dyed images |
+| `cancer_test.py`                             | Script for cancer test        |
+| `main.py`                                    | Main application script       |
+| `requirements.txt`                           | List of project dependencies   |
+| `README.md`                                  | Documentation file            |
+| `constants.py`                               | File for constant variables    |
+| `config.py`                                  | Configuration file            |
+| `messages.py`                                | File for message handling     |
+| `utility.py`                                 | Utility functions file        |
+| `venv`                                       | Virtual environment folder     |
+| `parasite_large_image_generation.py`         | Script for generating large parasite images |
+| `parasite_small_image_generation.py`         | Script for generating small parasite images |
+| `src`                                        | Source code directory         |
+
+
+**Steps for running this Code**
+### Installation
+
+Clone the repository and navigate to the project directory:
+```bash
+git clone https://github.com/ShrutikaSingh/HD5-TIFF-IMAGE-GENERATION.git
+```
+
+```
+python3 -m venv venv  # on Windows, use "python -m venv venv" instead
+
+. venv/bin/activate   # on Windows, use "venv\Scripts\activate" instead
+
+pip install -r requirements.txt
+```
+
+***Run the code***
+
+```
+python main.py
+```
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Implementation Details
 
 ## Thought Process
 
