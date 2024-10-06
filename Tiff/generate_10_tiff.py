@@ -1,3 +1,4 @@
+#Total image processing 10 by 10 tiff image took 1.20 seconds.
 import numpy as np
 from PIL import Image
 from tqdm import tqdm
