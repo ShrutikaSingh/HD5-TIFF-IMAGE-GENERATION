@@ -33,7 +33,7 @@ def calculate_dyed_area(original_image, dyed_image):
                 if dyed_image[i, j] == 1:  # Dyed region inside parasite
                     dyed_area_inside += 1
 
-    return parasite_area, dyed_area_inside
+    return parasite_area & dyed_area_inside
 
 def has_cancer_parallel(original_image, dyed_image):
     """Determine if the parasite has cancer based on images using optimized parallel code."""
