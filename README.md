@@ -1,8 +1,9 @@
 # DragonFruit.ai Assesment
 
-### The Project have code based Python Class Structure
+## The Project have code based Python Class Structure
 
 
+### *** Folder Structure ***
 | Folder/File Name                              | Description                   |
 |-----------------------------------------------|-------------------------------|
 | `100KImg`                                    | Folder for 100K images        |
