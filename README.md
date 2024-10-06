@@ -383,14 +383,13 @@ This project explores and compares two file formats, HDF5 and TIFF, for generati
 
 ***CANCER Positive***
 
-<img width="478" alt="image" src="https://github.com/user-attachments/assets/d244d8ab-7fd9-4de1-81bb-46536546ff62">
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/d244d8ab-7fd9-4de1-81bb-46536546ff62">
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/efe3c752-cb54-4954-b47d-00f3961d2474">
 
 
-![image](https://github.com/user-attachments/assets/85c978ec-cd29-43a5-80c1-f4d19e5dbca9)
-
-
+-----
 **CANCER Negative**
-<img width="517" alt="image" src="https://github.com/user-attachments/assets/c7615fa2-8be2-409b-b57a-7e865f68e3da">
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/c7615fa2-8be2-409b-b57a-7e865f68e3da">
 
 --------------------------------------------------------------------------------
 
