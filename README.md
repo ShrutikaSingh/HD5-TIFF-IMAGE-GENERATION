@@ -380,12 +380,17 @@ In the worst-case scenario, the dye could cover 100% of the image, representing 
 ***CANCER Positive***
 
 <img width="368" alt="image" src="https://github.com/user-attachments/assets/d244d8ab-7fd9-4de1-81bb-46536546ff62">
+
 <img width="368" alt="image" src="https://github.com/user-attachments/assets/efe3c752-cb54-4954-b47d-00f3961d2474">
 
 
 -----
 **CANCER Negative**
+
 <img width="368" alt="image" src="https://github.com/user-attachments/assets/c7615fa2-8be2-409b-b57a-7e865f68e3da">
+
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/efe3c752-cb54-4954-b47d-00f3961d2474">
+
 
 --------------------------------------------------------------------------------
 
