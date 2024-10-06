@@ -373,12 +373,8 @@ In the worst-case scenario, the dye could cover 100% of the image, representing 
 - The project demonstrates the trade-off between processing time and file size, offering insights into when each format should be used.
 
 
-# HDF5 and TIFF Image Generation
+# CANCER RESULTS VERIFICATION
 
-This project explores and compares two file formats, HDF5 and TIFF, for generating and handling large microscopic images. The project generates parasite and dyed images of sizes ranging from small (10x10) to large (100k x 100k) without optimizations initially and then explores optimizations to improve the process.
-
-
---------------------------------------------------------------------------------------------------------------------------------
 ### HD5
 
 ***CANCER Positive***
