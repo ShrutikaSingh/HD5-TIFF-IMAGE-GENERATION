@@ -1,7 +1,7 @@
 # parasite_large_dyed.py
 
 import numpy as np
-from config import WIDTH, HEIGHT, HDF5_DIR, DYED_REGIONS
+from config import WIDTH, HEIGHT, HDF5_100K_DIR, DYED_REGIONS
 from constants import WHITE, BLACK
 from messages import DYED_LARGE_IMAGE_MESSAGE
 from utility import write_hdf5, timer_start, timer_end
@@ -17,6 +17,6 @@ class ParasiteLargeDyedImageGenerator:
         for x_start, x_end, y_start, y_end, value in DYED_REGIONS:
             self.image[x_start:x_end, y_start:y_end] = value
 
-        write_hdf5(f'{HDF5_DIR}/dyed_large.h5', 'dyed_large', self.image, compression="gzip")
+        write_hdf5(f'{HDF5_100K_DIR}/dyed_large.h5', 'dyed_large', self.image, compression="gzip")
 
         timer_end(start_time, DYED_LARGE_IMAGE_MESSAGE)

@@ -1,7 +1,7 @@
 # parasite_small_image_generation.py
 
 import numpy as np
-from config import SMALL_WIDTH, SMALL_HEIGHT, HDF5_DIR, PARASITE_REGIONS
+from config import SMALL_WIDTH, SMALL_HEIGHT, HDF5_10_DIR, PARASITE_REGIONS
 from constants import WHITE, BLACK
 from messages import PARASITE_SMALL_IMAGE_MESSAGE
 from utility import write_hdf5, timer_start, timer_end
@@ -20,6 +20,6 @@ class ParasiteSmallImageGenerator:
         # Fill left half with white
         self.image[:, :SMALL_WIDTH // 2] = WHITE
 
-        write_hdf5(f'{HDF5_DIR}/parasite.h5', 'parasite', self.image, compression="gzip")
+        write_hdf5(f'{HDF5_10_DIR}/parasite.h5', 'parasite', self.image, compression="gzip")
 
         timer_end(start_time, PARASITE_SMALL_IMAGE_MESSAGE)

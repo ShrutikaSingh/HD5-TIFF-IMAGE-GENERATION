@@ -2,12 +2,18 @@
 import os
 
 # Directory structure
-HDF5_DIR = "./10Img"
-PNG_DIR = "./10Img"
+HDF5_10_DIR = "./10Img"
+PNG_10_DIR = "./10Img"
+
+HDF5_100K_DIR = "./100KImg"
+PNG_100K_DIR = "./100KImg"
 
 # Ensure directories exist
-os.makedirs(HDF5_DIR, exist_ok=True)
-os.makedirs(PNG_DIR, exist_ok=True)
+# Ensure directories exist
+os.makedirs(HDF5_10_DIR, exist_ok=True)
+os.makedirs(HDF5_100K_DIR, exist_ok=True)  # Create the large images directory
+os.makedirs(PNG_10_DIR, exist_ok=True)
+os.makedirs(PNG_100K_DIR, exist_ok=True)  #
 
 # Image dimensions (modifiable)
 WIDTH = 100000  # Can be updated based on need

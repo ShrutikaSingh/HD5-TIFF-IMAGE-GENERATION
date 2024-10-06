@@ -1,8 +1,8 @@
 # config.py
 
 # Directory structure
-HDF5_DIR = "./10Img"
-PNG_DIR = "./10Img"
+HDF5_10_DIR = "./10Img"
+PNG_10_DIR = "./10Img"
 
 # Image dimensions (modifiable)
 WIDTH = 100000  # Can be updated based on need
