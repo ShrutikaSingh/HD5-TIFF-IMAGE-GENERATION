@@ -1,16 +1,1 @@
 venv/
-# Ignore all .h5 files
-*.h5
-
-# But do not ignore specific .h5 files (use the correct path to your file)
-!src/100KImg/parasite_large.h5
-!src/100KImg/dyed_large.h5
-
-# Ignore all .tiff files
-*.tiff
-
-# Ignore all .png files
-*.png
-
-# Ignore __pycache__ directory in src
-src/__pycache__/
