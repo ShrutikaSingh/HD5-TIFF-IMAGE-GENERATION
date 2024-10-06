@@ -378,6 +378,22 @@ In the worst-case scenario, the dye could cover 100% of the image, representing 
 This project explores and compares two file formats, HDF5 and TIFF, for generating and handling large microscopic images. The project generates parasite and dyed images of sizes ranging from small (10x10) to large (100k x 100k) without optimizations initially and then explores optimizations to improve the process.
 
 
+--------------------------------------------------------------------------------------------------------------------------------
+### HD5
+
+***CANCER Positive***
+
+<img width="478" alt="image" src="https://github.com/user-attachments/assets/d244d8ab-7fd9-4de1-81bb-46536546ff62">
+
+
+![image](https://github.com/user-attachments/assets/85c978ec-cd29-43a5-80c1-f4d19e5dbca9)
+
+
+**CANCER Negative**
+<img width="517" alt="image" src="https://github.com/user-attachments/assets/c7615fa2-8be2-409b-b57a-7e865f68e3da">
+
+--------------------------------------------------------------------------------
+
 ## Prerequisites
 
  ## Main Folder Structure with Class Based Implementation 
@@ -410,7 +426,13 @@ cd src
 python main
 ```
 
-## Other Types of images generation Usage
+<img width="516" alt="image" src="https://github.com/user-attachments/assets/d714a1ac-5135-45de-83c2-d13b4fd3e2ba">
+
+
+
+
+
+## Other Utilities To Generate and Test different types of images generation Usage
 
 ### Generating TIFF Images
 To generate small TIFF images (10x10 pixels), you can run the following script:
@@ -450,3 +472,6 @@ cd HD5
 python generate_100k.py```
 
 Both scripts will generate large images, and you can analyze the results using ls -lh to check file sizes and formats.
+
+
+
