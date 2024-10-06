@@ -62,6 +62,8 @@
        - **JPEG** (Lossy)
        - **Deflate** (Lossless)
      - TIFF is effective for compressing images with large uniform regions, such as microscopic images.
+
+
 8. **Understanding and Applying different optimisation techniques mage Processing Optimizations**
 
    1. **Numba for JIT Compilation**:
@@ -96,16 +98,31 @@
        - **For 10 * 10 Img**
          <img width="809" alt="image" src="https://github.com/user-attachments/assets/3c8606fd-4933-47ab-8897-f048b50b1618">
        - **For 100000 * 100000 Imh**
-       - <img width="813" alt="image" src="https://github.com/user-attachments/assets/629a2fff-5ef8-49e4-9213-e19571d203cb">
+       - <img width="810" alt="image" src="https://github.com/user-attachments/assets/b0438e09-22f5-4933-bb85-148159bae9d2">
 
-   - **Conslucion After perfoming the Experiment mentioned in detailed below** (Lossless)
+
+   - **Conclucion After perfoming the Experiment mentioned in detailed below** (Lossless)
      - **HD5 is Good For Generating Microscopic image as it to 18-11 = 9 seconds less time than TIFF Images Geneartion with all the optimisation processes mentioned above as well as for storing large size image**
 
 
-9. **After Perfoming the above experiment for both TIFF & HD5**
+## How to Run a Specific Example Application?
+
+**Before run a specific example application, make sure you have activated the virtual enviroment.**
+
+For example, if you want to run the Hello application, just execute these commands:
+
+```bash
+cd hello
+flask run
+```
+
+10. **After Perfoming the above experiment for both TIFF & HD5**
     - **I decided to use 100000k by 100000k HD5 images for Checking the presence of cancer***
 
 # PROCEDURES, LOGIC, CODE  & OPTIMISATION TECHNIQUES EXPLAINATION
+
+
+
 
 ## First Steps For Understaing Image:**
 
@@ -360,51 +377,61 @@ In the worst-case scenario, the dye could cover 100% of the image, representing 
 
 This project explores and compares two file formats, HDF5 and TIFF, for generating and handling large microscopic images. The project generates parasite and dyed images of sizes ranging from small (10x10) to large (100k x 100k) without optimizations initially and then explores optimizations to improve the process.
 
-## Table of Contents
-- [Overview](#overview)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Generating TIFF Images](#generating-tiff-images)
-  - [Generating HDF5 Images](#generating-hdf5-images)
-  - [Generating 100k x 100k Images](#generating-100k-x-100k-images)
-- [Comparison of TIFF and HDF5](#comparison-of-tiff-and-hdf5)
-  - [HDF5 Advantages](#hdf5-advantages)
-  - [TIFF Advantages](#tiff-advantages)
-- [Optimizations](#optimizations)
-  - [Applied Techniques](#applied-techniques)
-  - [Optimized Results](#optimized-results)
-- [Results](#results)
-- [Contributors](#contributors)
 
-## Overview
+--------------------------------------------------------------------------------------------------------------------------------
+### HD5
 
-This project aims to:
+***CANCER Positive***
 
-- Compare the performance of TIFF and HDF5 image formats.
-- Generate large-scale microscopic images (100k x 100k).
-- Analyze compression techniques, memory consumption, and processing time for both formats.
-- Optimize the generation process using parallelization and compression techniques.
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/d244d8ab-7fd9-4de1-81bb-46536546ff62">
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/efe3c752-cb54-4954-b47d-00f3961d2474">
+
+
+-----
+**CANCER Negative**
+<img width="368" alt="image" src="https://github.com/user-attachments/assets/c7615fa2-8be2-409b-b57a-7e865f68e3da">
+
+--------------------------------------------------------------------------------
 
 ## Prerequisites
+
+ ## Main Folder Structure with Class Based Implementation 
+<img width="710" alt="image" src="https://github.com/user-attachments/assets/bd11e05a-0487-4593-a938-fe81c70fd123">
 
 - Python 3.x
 - Libraries: h5py, PIL, NumPy, tqdm, concurrent.futures, numba
 
-Install the required Python libraries using:
+## Installation
 
+First, you need to clone this repository:
 ```bash
-pip install -r requirements.txt ```
-
-
-Installation
+git clone https://github.com/ShrutikaSingh/HD5-TIFF-IMAGE-GENERATION.git
+```
 Clone the repository and navigate to the project directory:
 
-``` git clone https://github.com/ShrutikaSingh/HD5-TIFF-IMAGE-GENERATION.git
-cd HD5-TIFF-IMAGE-GENERATION
+
+Now, we will need to create a virtual environment and install all the dependencies:
+
+```bash
+python3 -m venv venv  # on Windows, use "python -m venv venv" instead
+. venv/bin/activate   # on Windows, use "venv\Scripts\activate" instead
+pip install -r requirements.txt
 ```
 
-## Usage
+## Run the code
+
+```bash
+cd src
+python main
+```
+
+<img width="516" alt="image" src="https://github.com/user-attachments/assets/d714a1ac-5135-45de-83c2-d13b4fd3e2ba">
+
+
+
+
+
+## Other Utilities To Generate and Test different types of images generation Usage
 
 ### Generating TIFF Images
 To generate small TIFF images (10x10 pixels), you can run the following script:
@@ -444,3 +471,6 @@ cd HD5
 python generate_100k.py```
 
 Both scripts will generate large images, and you can analyze the results using ls -lh to check file sizes and formats.
+
+
+
