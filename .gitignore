@@ -11,3 +11,6 @@ venv/
 
 # Ignore __pycache__ directory in src
 src/__pycache__/
+__pycache__/
+.DS_Store
+src/.DS_Store
