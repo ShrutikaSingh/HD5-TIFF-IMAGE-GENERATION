@@ -6,8 +6,8 @@ import os
 import time  # To track time
 
 # Create a directory for HDF5 and PNG files 
-hdf5_dir = "./"
-png_dir = "./"
+hdf5_dir = "./10Img"
+png_dir = "./10Img"
 
 
 # Timer function
@@ -37,7 +37,7 @@ def generate_hdf5_images():
     image = np.zeros((height, width), dtype=np.uint8) 
 
     with tqdm(total=7, desc="Processing images") as pbar:
-        
+
         # Start timer for the entire process
         total_start = timer_start()
 
@@ -108,9 +108,9 @@ def convert_hdf5_to_png(hdf5_filename, png_filename):
 
 # Main function to check and convert HDF5 to PNG
 def png():
-    convert_hdf5_to_png("./parasite.h5", "./parasite.png")
-    convert_hdf5_to_png("./dyed.h5", "./dyed.png")
+    convert_hdf5_to_png(f'{hdf5_dir}/parasite.h5', f'{png_dir}/parasite.png')
+    convert_hdf5_to_png(f'{hdf5_dir}/dyed.h5', f'{png_dir}/dyed.png')
 
 # Run the conversion process
-png()
-print("Images successfully stored in separate HDF5 files and converted to PNG.")
+# png()
+# print("Images successfully stored in separate HDF5 files and converted to PNG.")
